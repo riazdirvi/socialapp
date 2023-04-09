@@ -60,12 +60,12 @@
           "defaultConfiguration": "production"
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "ssl": true,
             "sslCert": "./ssl/server.crt",
-            "sslKey": "./ssl/server.key"
+            "sslKey": "./ssl/server.key",
+            "ssl": true
           },
+          "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
               "browserTarget": "client:build:production"
